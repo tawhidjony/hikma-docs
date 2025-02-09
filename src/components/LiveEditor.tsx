@@ -3,24 +3,14 @@ import { UiButton } from 'hikma-ui'
 import { themes } from "prism-react-renderer"
 import { useState } from 'react';
 
-export function ButtonLiveEditor() {
+export function LiveCodeEditor({code}: {code: any}) {
   const [copied, setCopied] = useState(false);
-  const code = `// Try changing variant values
-function Example() {
-  return (
-    <div className="flex gap-2 flex-wrap">
-      <UiButton >Primary</UiButton>
-      <UiButton variant="danger">Danger</UiButton>
-      <UiButton variant="success">Success</UiButton>
-    </div>
-  )
-}`;
-
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
 
   return (
     <LiveProvider 
@@ -47,6 +37,8 @@ function Example() {
           </button>
         </div>
         <LiveError className="p-2 text-danger bg-light m-0" />
+
+       
       </div>
     </LiveProvider>
   );

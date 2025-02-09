@@ -1,0 +1,26 @@
+[
+  {
+    "name": "components",
+    "type": "folder"
+  },
+  {
+    "name": "getting-started.mdx",
+    "type": "file"
+  },
+  {
+    "name": "introduction",
+    "type": "folder"
+  },
+  {
+    "name": "introduction.mdx",
+    "type": "file"
+  },
+  {
+    "name": "routeLink.ts",
+    "type": "file"
+  },
+  {
+    "name": "routing.mdx",
+    "type": "file"
+  }
+]

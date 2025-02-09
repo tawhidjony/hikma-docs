@@ -1,4 +1,4 @@
-import { ButtonLiveEditor } from "./LiveEditor";
+import { LiveCodeEditor } from "./LiveEditor";
 
 type CodePreviewProps = {
     code: string;
@@ -15,7 +15,7 @@ type CodePreviewProps = {
           <code className={`language-${language}`}>{code}</code>
         </pre>
         <div className="p-4 border-t">
-          <ButtonLiveEditor />
+          <LiveCodeEditor code={code} />
         </div>
       </div>
     );
